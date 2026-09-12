@@ -529,7 +529,41 @@ class ResultPage extends StatelessWidget {
       TextButton.icon(onPressed: onHome, icon: const Icon(Icons.home_outlined), label: const Text('Retour à l’accueil')),
     ]));
   }
-  Widget _metric(IconData icon, String value, String label, Color color) => Container(padding: const EdgeInsets.all(14), decoration: BoxDecoration(color: ZColors.surface, border: Border.all(color: ZColors.border), borderRadius: BorderRadius.circular(9)), child: Row(children: [Icon(icon, color: color, size: 20), const SizedBox(width: 8), Column(crossAxisAlignment: CrossAxisAlignment.start, children: [Text(value, style: const TextStyle(fontWeight: FontWeight.w900, fontSize: 19)), Text(label, style: const TextStyle(color: ZColors.muted, fontSize: 10))])])));
+  Widget _metric(IconData icon, String value, String label, Color color) {
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: ZColors.surface,
+        border: Border.all(color: ZColors.border),
+        borderRadius: BorderRadius.circular(9),
+      ),
+      child: Row(
+        children: [
+          Icon(icon, color: color, size: 20),
+          const SizedBox(width: 8),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                value,
+                style: const TextStyle(
+                  fontWeight: FontWeight.w900,
+                  fontSize: 19,
+                ),
+              ),
+              Text(
+                label,
+                style: const TextStyle(
+                  color: ZColors.muted,
+                  fontSize: 10,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
   String _resultTitle(int p) => p >= 90 ? 'Excellent résultat !' : p >= 75 ? 'Bon travail !' : p >= 60 ? 'Bonne progression' : 'À renforcer';
   String _resultSubtitle(int p) => p >= 75 ? 'Continuez à consolider les points techniques.' : 'Relisez les références indiquées et recommencez.';
 }
