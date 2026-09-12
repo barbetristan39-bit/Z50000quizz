@@ -1,0 +1,16 @@
+name: z50000_revision
+publish_to: 'none'
+description: Outil personnel de révision basé sur le Livret d'études Z50000 Formation initiale.
+version: 2.0.0+2
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+  flutter: '>=3.24.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.5.3
+
+flutter:
+  uses-material-design: true

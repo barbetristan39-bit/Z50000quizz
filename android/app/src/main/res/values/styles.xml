@@ -1,0 +1,13 @@
+<resources>
+    <style name="LaunchTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#07121C</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:statusBarColor">#07121C</item>
+        <item name="android:navigationBarColor">#07121C</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="NormalTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">#07121C</item>
+    </style>
+</resources>
