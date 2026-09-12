@@ -379,6 +379,7 @@ class _SessionConfigPageState extends State<SessionConfigPage> {
       const SizedBox(height: 18),
       SizedBox(height: 50, child: FilledButton.icon(onPressed: _launch, icon: const Icon(Icons.arrow_forward), label: Text('COMMENCER', style: const TextStyle(fontWeight: FontWeight.w800)))),
     ],
+  ),
   );
 
   Widget _themeChoice(String? key, String title, String sub, IconData icon) {
